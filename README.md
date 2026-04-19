@@ -1,42 +1,93 @@
-# sv
+# 🎵 Sonic Drift
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+> A real-time audio-reactive visual playground where music shapes motion, color, and atmosphere.
 
-## Creating a project
+---
 
-If you're seeing this, you've probably already done this step. Congrats!
+## What is Sonic Drift?
 
-```sh
-# create a new project
-npx sv create my-app
+Sonic Drift is an interactive music-driven visual canvas where sound is transformed into real-time motion, light, and abstract visuals. Audio frequency data controls dynamic animations — particles, glow effects, wave distortions — creating an evolving visual "mood space" that reacts directly to music.
+
+No two moments sound (or look) the same.
+
+---
+
+## Features
+
+- 🎚️ **Audio-Reactive Visuals** — Frequency data drives every animation in real time
+- ✨ **Dynamic Particles** — Sound energy spawns and propels particle systems
+- 🌊 **Wave Distortions** — Bass and mid frequencies warp and bend the canvas
+- 💡 **Glow Effects** — Light blooms and pulses in sync with the music
+- 🎨 **Mood Space** — An evolving atmosphere that shifts with tone, tempo, and texture
+
+---
+
+## How It Works
+
+Sonic Drift uses the **Web Audio API** to analyze incoming audio in real time. Frequency and waveform data from the audio stream are mapped to visual parameters — controlling particle velocity, color hue, distortion intensity, and glow radius — rendering a living canvas that breathes with the music.
+
+```
+Audio Input → FFT Analysis → Frequency Bands → Visual Parameters → Animated Canvas
 ```
 
-To recreate this project with the same configuration:
+---
 
-```sh
-# recreate this project
-bun x sv@0.15.1 create --template minimal --types ts --add prettier tailwindcss="plugins:typography,forms" sveltekit-adapter="adapter:vercel" --install bun .
-```
+## Getting Started
 
-## Developing
+```bash
+# Clone the repository
+git clone https://github.com/your-username/sonic-drift.git
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+# Navigate into the project
+cd sonic-drift
 
-```sh
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Then open your browser and go to `http://localhost:3000`.
 
-To create a production version of your app:
+---
 
-```sh
-npm run build
-```
+## Usage
 
-You can preview the production build with `npm run preview`.
+1. Open Sonic Drift in your browser
+2. Grant microphone access **or** upload an audio file
+3. Hit **Play** and watch the canvas come alive
+4. Adjust visual settings via the control panel to tune the experience
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+---
+
+## Tech Stack
+
+| Layer          | Technology         |
+| -------------- | ------------------ |
+| Audio Analysis | Web Audio API      |
+| Rendering      | Canvas API / WebGL |
+| Framework      | JavaScript / React |
+| Styling        | CSS / GLSL Shaders |
+
+---
+
+## Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/my-feature`)
+3. Commit your changes (`git commit -m 'Add my feature'`)
+4. Push to the branch (`git push origin feature/my-feature`)
+5. Open a Pull Request
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+<p align="center">Made with 🎶 and motion</p>
